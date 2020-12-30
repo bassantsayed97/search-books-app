@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  </head>
+  <body>
+
+<h1>Search books</h1>
+
+<div class="container" style="padding-top: 100px;">
+  <div class="row">
+    <div class="col-6">
+      <input
+    class="form-control"
+      type="text"
+      id="book"
+      placeholder="here you can search for any book ..!!">
+      
+    </div>
+    <div class="col-6">
+      <button class="btn btn-primary" (click)="handlesearch()">Search</button>
+    </div>    
+  </div>
+  <br>
+ 
+    <!--*ngFor="let item of data">{{item.volumeInfo.title}} -->  
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of data" >{{item.volumeInfo.title}}</li>
+  
+</ul>
+</div>
+  </body>
+</html>
